@@ -1,0 +1,96 @@
+@use "../../utilities/variables" as v;
+
+.recipe-detail {
+  margin-bottom: 52px;
+  padding-bottom: 12px;
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    padding: 12px 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-top {
+      width: fit-content;
+    }
+    &-bottom {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 auto;
+      padding: 6px 8px 6px 8px;
+      gap: 8px;
+      width: fit-content;
+      color: v.$color-white-0;
+      @include v.regular-label;
+      background: rgba(48, 48, 48, 0.3);
+      backdrop-filter: blur(2.49842px);
+      border-radius: 8px;
+    }
+  }
+  &__main {
+    padding: 0px 16px;
+  }
+  &__top {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-bar {
+      width: 48px;
+      height: 5px;
+      background-color: v.$color-neutral-10;
+      border-radius: 10px;
+    }
+  }
+  &__h4 {
+    @include v.bold-h4;
+    padding: 12px 0px;
+  }
+  &__p {
+    @include v.regular-label;
+    color: v.$color-neutral-50;
+    padding-bottom: 12px;
+  }
+  &__nutrition {
+    display: grid;
+    grid-template-areas:
+      "info info"
+      "info info";
+    gap: 20px 10px;
+    padding: 10px 0px;
+  }
+  &__info {
+    @include v.bold-body;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__icon {
+    width: 36px;
+    height: 36px;
+    background-color: v.$color-neutral-10;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__ingredients {
+    padding: 12px 0;
+  }
+  &__subheading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  &__h5 {
+    @include v.bold-h5;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../../utilities/variables" as v;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  height: 52px;
+  box-sizing: border-box;
+  width: 100vw;
+  box-shadow: 0px -1px 8px rgba(108, 108, 108, 0.08);
+  background-color: v.$color-white-0;
+  position: fixed;
+  bottom: 0;
+  overflow: visible;
+  z-index: 99;
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+  }
+  &__plus {
+    background-color: v.$color-primary-50;
+    border-radius: 100%;
+    border-bottom: 20px;
+    margin-bottom: 30px;
+  }
+}

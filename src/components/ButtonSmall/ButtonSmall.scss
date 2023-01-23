@@ -1,0 +1,11 @@
+@use "../../utilities/variables" as v;
+.button-small {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  background-color: v.$color-primary-50;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

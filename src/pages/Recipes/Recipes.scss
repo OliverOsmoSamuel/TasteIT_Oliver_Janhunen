@@ -1,0 +1,31 @@
+@use "../../utilities/variables" as v;
+.recipes {
+  height: 100%;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0px 16px 24px 16px;
+  margin-bottom: 52px;
+  &__h4 {
+    @include v.bold-h4;
+    padding: 20px 0px;
+  }
+  &__trending {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  &__h5 {
+    @include v.bold-h5;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  a {
+    text-decoration: none;
+  }
+}

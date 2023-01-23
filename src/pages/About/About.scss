@@ -1,0 +1,24 @@
+@use "../../utilities/variables" as v;
+
+.about {
+  padding: 0px 20px;
+  &__h4 {
+    @include v.bold-h4;
+    color: v.$color-neutral-100;
+    padding: 20px 0px;
+  }
+  &__h5 {
+    @include v.bold-h5;
+    color: v.$color-neutral-100;
+    padding-bottom: 16px;
+  }
+  &__p {
+    @include v.regular-body;
+    color: v.$color-neutral-50;
+    padding-bottom: 16px;
+  }
+  &__link {
+    @include v.bold-body;
+    color: v.$color-primary-50;
+  }
+}

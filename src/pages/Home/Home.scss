@@ -1,0 +1,51 @@
+@use "../../utilities/variables" as v;
+.home {
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 60px 42px 82px 42px;
+  color: v.$color-white-0;
+  background-image: url("../../assets/Image/Home/home.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+  &__action {
+    text-align: center;
+    z-index: 2;
+    min-width: 100%;
+  }
+  &__counter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    @include v.regular-body;
+  }
+  &__icon {
+    margin-right: 8px;
+  }
+  &__shadow {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    left: 0px;
+    bottom: 52px;
+    z-index: 1;
+
+    background: linear-gradient(
+      0deg,
+      #000000 10.48%,
+      rgba(0, 0, 0, 0.0001) 96.27%
+    );
+  }
+}

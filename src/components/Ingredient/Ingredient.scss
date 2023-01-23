@@ -1,0 +1,18 @@
+@use "../../utilities/variables" as v;
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: v.$color-neutral-10;
+  padding: 12px 16px;
+  border-radius: 12px;
+  &__body {
+    @include v.bold-body;
+    color: v.$color-neutral-100;
+  }
+  &__amount {
+    @include v.regular-label;
+    color: v.$color-neutral-50;
+  }
+}

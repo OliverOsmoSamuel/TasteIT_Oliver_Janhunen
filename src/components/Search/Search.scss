@@ -1,0 +1,42 @@
+@use "../../utilities/variables" as v;
+
+.search {
+  padding: 8px 0;
+  &__container {
+    width: 100%;
+  }
+  &__icon {
+    position: absolute;
+    padding: 12px 12px 10px 16px;
+    height: 20px;
+    width: 20px;
+  }
+  &__input {
+    @include v.regular-label;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid v.$color-neutral-20;
+    padding: 12px 12px 12px 47px;
+    &::placeholder {
+      font-family: "Poppins", sans-serif;
+      color: v.$color-neutral-30;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 140%;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      border: 1px solid v.$color-primary-50;
+    }
+    &:focus {
+      border: 1px solid v.$color-primary-50;
+    }
+    &:focus-visible {
+      outline: none;
+      border: 1px solid v.$color-primary-50;
+    }
+  }
+}
